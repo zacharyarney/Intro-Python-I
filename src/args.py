@@ -47,8 +47,11 @@ print('-----')
 # arguments. Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
-def f3(x, y = 1):
+
+
+def f3(x, y=1):
     return int(x) + int(y)
+
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
@@ -63,9 +66,12 @@ print('-----')
 # Google "python keyword arguments".
 
 # YOUR CODE HERE
+
+
 def f4(**kwargs):
     for key in kwargs:
         print(f'{key}: {kwargs[key]}')
+
 
 # Should print
 # key: a, value: 12
